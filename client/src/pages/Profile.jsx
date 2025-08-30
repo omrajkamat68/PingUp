@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { dummyPostsData, dummyUserData } from '../assets/assets'
 import Loading from '../components/Loading'
+import UserProfileInfo from '../components/UserProfileInfo'
 
 const Profile = () => {
 
@@ -29,6 +30,9 @@ const Profile = () => {
           <div className='h-40 md:h-56 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200'>
             {user.cover_photo && <img src={user.cover_photo} alt='' className='w-full h-full object-cover' />}
           </div>
+
+          {/* User Info */}
+          <UserProfileInfo user={user} posts={posts} profileId={profileId} setShowEdit={setShowEdit} />
         </div>
       </div>
     </div>
