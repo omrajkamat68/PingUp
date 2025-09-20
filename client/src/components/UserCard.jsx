@@ -1,5 +1,4 @@
 import React from 'react'
-import { dummyUserData } from '../assets/assets'
 import { MapPin, MessageCircle, Plus, UserPlus } from 'lucide-react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useAuth } from '@clerk/clerk-react'
@@ -32,7 +31,22 @@ const UserCard = ({user}) => {
     }
 
     const handleConnectionRequest = async () => {
-        
+        if(currentUser.connections.includes(user._id)){
+          return navigate('/messages/' + user._id)
+        }
+
+        try {
+          const {data} = await api.post('/api/user/connect', {id: user._id}, {
+            headers: {Authorization: `Bearer ${await getToken()}`}
+          })
+          if(data.success){
+            toast.success(data.message)
+          }else{
+            toast.error(data.message)
+          }
+        } catch (error) {
+          toast.error(error.message)
+        }
     }
 
   return (
