@@ -88,8 +88,8 @@ VITE_BASEURL=http://localhost:4000
 1️⃣ **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/pingup.git
-cd pingup
+git clone https://github.com/omrajkamat68/PingUp.git
+cd PingUp
 ```
 
 2️⃣ **Install Dependencies**
@@ -112,7 +112,7 @@ Create `.env` files inside both `server/` and `client/` with the values listed a
 ```bash
 # Start Backend
 cd server
-npm run dev
+npm run server
 
 # Start Frontend
 cd ../client
