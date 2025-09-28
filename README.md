@@ -1,7 +1,5 @@
 # 🔗 PingUp – Social Media Platform
 
-[![MERN](https://img.shields.io/badge/MERN-Full%20Stack-brightgreen?style=for-the-badge\&logo=mongodb)]() [![React](https://img.shields.io/badge/Frontend-React%20+%20Vite-blue?style=for-the-badge\&logo=react)]() [![Express.js](https://img.shields.io/badge/Backend-Express.js-lightgrey?style=for-the-badge\&logo=express)]() [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]()
-
 **PingUp** is a modern, feature-rich **MERN stack** social media application that allows users to connect, share posts, create stories, message friends, and discover new people — all in one beautifully designed platform. With real-time updates, automated reminders, and a clean user interface, PingUp makes staying connected seamless and engaging.
 
 ---
